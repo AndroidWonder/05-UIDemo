@@ -27,7 +27,7 @@ public class UIDemo extends Activity {
 		txtUserName.setHint("First  name + Last Name");
 
 		btnLogin = (Button) findViewById(R.id.btnLogin);
-		btnLogin.setOnClickListener(new OnClickListener() {
+		btnLogin.setOnClickListener(  new OnClickListener() {
 
 			public void onClick(View v1) {
 				String strUserName = txtUserName.getText().toString();
