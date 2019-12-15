@@ -1,4 +1,5 @@
 /*
+ * It is possible to change UIs within one Activity, but it's not often done.
  * Type in user name. If correct name is entered, the View is
  * changed.
  */
