@@ -36,6 +36,7 @@ public class UIDemo extends Activity {
 					showScreen2();
 				}
 				else {
+					txtUserName.setText("");
 					Toast.makeText(UIDemo.this, 
 					  "Invalid User", Toast.LENGTH_LONG).show();
 				}
