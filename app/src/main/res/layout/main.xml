@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dip"
         android:background="#ff00ff00"
-        android:text="Enter User Name"
+        android:text="@string/enter"
         android:textSize="18sp"
         android:textStyle="bold" />
 

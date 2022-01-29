@@ -1,6 +1,6 @@
 /*
  * It is possible to change UIs within one Activity, but it's not often done.
- * Type in user name. If correct name is entered, the View is
+ * Type in user name. If correct, name is entered, the View is
  * changed.
  */
 
@@ -28,6 +28,8 @@ public class UIDemo extends Activity {
 		txtUserName.setHint("First  name + Last Name");
 
 		btnLogin = (Button) findViewById(R.id.btnLogin);
+
+		//set listener on button
 		btnLogin.setOnClickListener(  new OnClickListener() {
 
 			public void onClick(View v1) {
@@ -48,9 +50,11 @@ public class UIDemo extends Activity {
 	//display new layout file
 	private void showScreen2() {
 		setContentView(R.layout.screen2);
-		EditText txtData2 = (EditText) findViewById(R.id.txtData2);
-		txtData2.setText("Yes - " + txtUserName.getText().toString());
 
+		EditText txtData2 = (EditText) findViewById(R.id.txtData2);
+		txtData2.setText("It's " + txtUserName.getText().toString());
+
+		//gwr reference to ImageButton and set listener
 		ImageButton btnWork2 = (ImageButton) findViewById(R.id.btnWork2);
 		btnWork2.setOnClickListener(new OnClickListener() {
 
