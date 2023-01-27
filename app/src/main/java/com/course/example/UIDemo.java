@@ -61,6 +61,7 @@ public class UIDemo extends Activity {
 			public void onClick(View v) {
 				Toast.makeText(getApplicationContext(), "Bye",
 						Toast.LENGTH_SHORT).show();
+				//destroy Activity
 				finish();
 			}
 		});
